@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup to Windowsill</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- External -->
+    <link rel="stylesheet" href="../style.css">
+    <script src="../index.js" defer></script>
+</head>
+<body class="signup-page">
+
+<div id="signup-page-container">
+    <form>
+        <div class="initials">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Kerem..." required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Yılmaz..." required>
+        </div>
+
+
+       <div class="extended">
+           <label for="email">Email</label>
+           <input type="email" name="email" id="email" placeholder="Email..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+           <label for="password">Password</label>
+           <input type="password" name="password" id="password" placeholder="Password..." minlength="6" required>
+       </div>
+
+        <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+</div>
+
+
+</body>
+</html>
